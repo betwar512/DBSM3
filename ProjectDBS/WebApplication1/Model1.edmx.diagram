@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="69df19ac08d34432a18a7e69c93d06f2" Name="Diagram1" >
+        <EntityTypeShape EntityType="Model1.Branch" Width="1.5" PointX="1.75" PointY="11.5" />
+        <EntityTypeShape EntityType="Model1.Company" Width="1.5" PointX="4" PointY="10.375" />
+        <EntityTypeShape EntityType="Model1.Contract" Width="1.5" PointX="5.625" PointY="6.125" />
+        <EntityTypeShape EntityType="Model1.Contract_task" Width="1.5" PointX="3.125" PointY="7.625" />
+        <EntityTypeShape EntityType="Model1.Contract_worker" Width="1.5" PointX="8.875" PointY="7.25" />
+        <EntityTypeShape EntityType="Model1.Department" Width="1.5" PointX="13.25" PointY="9.75" />
+        <EntityTypeShape EntityType="Model1.Employee" Width="1.5" PointX="9.75" PointY="3.75" />
+        <EntityTypeShape EntityType="Model1.Office_worker" Width="1.5" PointX="11.375" PointY="7.625" />
+        <EntityTypeShape EntityType="Model1.Project" Width="1.5" PointX="6.125" PointY="10" />
+        <EntityTypeShape EntityType="Model1.Project_status_report" Width="1.5" PointX="9.25" PointY="9.875" />
+        <AssociationConnector Association="Model1.FK_Branch_To_Company" />
+        <AssociationConnector Association="Model1.FK_Project_ToCompany" />
+        <AssociationConnector Association="Model1.FK_Contract_task_ToContract" />
+        <AssociationConnector Association="Model1.FK_Contract_To_Project" />
+        <AssociationConnector Association="Model1.FK_Contract_ToContract_worker" />
+        <AssociationConnector Association="Model1.FK_Contract_worker_ToTable" />
+        <AssociationConnector Association="Model1.FK_Project_status_report_ToContract_worker" />
+        <AssociationConnector Association="Model1.FK_Office_worker_ToDepartment" />
+        <AssociationConnector Association="Model1.FK_Office_worker_ToEmployee" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
