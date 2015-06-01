@@ -19,4 +19,4 @@ CREATE TRIGGER dbo.Trigger_Contract_worker_id
 
 GO 
 
-CREATE UNIQUE INDEX Contract_Id_index ON Contract_Worker(Employee_Id);
+CREATE UNIQUE INDEX Contract_Id_index ON dbo.Contract_Worker(Employee_Id);
