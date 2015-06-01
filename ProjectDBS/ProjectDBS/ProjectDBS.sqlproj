@@ -57,6 +57,9 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Employee.sql" />
@@ -69,6 +72,9 @@
     <Build Include="Branch.sql" />
     <Build Include="Project_status_report.sql" />
     <Build Include="Contract_worker.sql" />
+    <Build Include="dbo\Views\ContractWorkerView.sql" />
+    <Build Include="dbo\Views\OfficeWorkerView.sql" />
+    <None Include="Scripts\ScriptsIgnoredOnImport.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="ProjectDBS.refactorlog" />

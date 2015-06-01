@@ -10,9 +10,6 @@
     [Sex] NCHAR(10) NULL, 
     CONSTRAINT [CK_Employee] CHECK (Salary>0), 
 )
-
 GO
-
-
-CREATE UNIQUE INDEX Salary_index ON Employee(Salary);
-
+CREATE CLUSTERED INDEX IDX_S
+ON dbo.Employee(salary)
